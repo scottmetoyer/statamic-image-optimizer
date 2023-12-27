@@ -51,7 +51,7 @@ class ImageOptimizer
     private function ensureOnLocalFileSystem(Asset $asset)
     {
 
-        $path = $asset->resolvedPath();
+        $path = $asset->path();
 
         if (!$this->isOnLocalFileSystem($asset)) {
 
